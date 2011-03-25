@@ -2,12 +2,12 @@
 
 <table>
   <tr>
-    <th>String</th>
-    <th>String</th>
-    <th>String</th>
-    <th>String</th>
-    <th>String</th>
-    <th>String</th>
+    <th>Name</th>
+    <th>Streetname</th>
+    <th>Streetnumber</th>
+    <th>Zipcode</th>
+    <th>City</th>
+    <th>Country</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +15,12 @@
 
 <% @communes.each do |commune| %>
   <tr>
-    <td><%= commune.string %></td>
-    <td><%= commune.string %></td>
-    <td><%= commune.string %></td>
-    <td><%= commune.string %></td>
-    <td><%= commune.string %></td>
-    <td><%= commune.string %></td>
+    <td><%= commune.name %></td>
+    <td><%= commune.streetname %></td>
+    <td><%= commune.streetnumber %></td>
+    <td><%= commune.zipcode %></td>
+    <td><%= commune.city %></td>
+    <td><%= commune.country %></td>
     <td><%= link_to 'Show', commune %></td>
     <td><%= link_to 'Edit', edit_commune_path(commune) %></td>
     <td><%= link_to 'Destroy', commune, :confirm => 'Are you sure?', :method => :delete %></td>
