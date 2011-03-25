@@ -1,5 +1,7 @@
 Lodgework::Application.routes.draw do
   
+  resources :communes
+
   resources :homes
 
   devise_for :users
