@@ -1,10 +1,12 @@
 Lodgework::Application.routes.draw do
   
+  resources :homes
+
   devise_for :users
 
   resources :users
 
-  root :to => "home#index"
+  root :to => "homes#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
