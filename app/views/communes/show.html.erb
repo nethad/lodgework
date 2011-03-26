@@ -30,6 +30,14 @@
   <%= @commune.country %>
 </p>
 
+<p>
+	<ul>
+	<% @commune.users.each do |user| %>
+	<li><%= user.email %></li>
+	<% end %>
+	</ul>
+</p>
+
 
 <%= link_to 'Edit', edit_commune_path(@commune) %> |
 <%= link_to 'Back', communes_path %>
